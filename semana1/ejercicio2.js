@@ -15,7 +15,7 @@ async function main() {
   } else if(age > 60 && genere === "masculino"){
     console.log("Eres un hombre adulto mayor");
   } else{
-    console.log("No se cumplen lños valores de busqueda");
+    console.log("No se cumplen los valores de busqueda");
   }
 }
 

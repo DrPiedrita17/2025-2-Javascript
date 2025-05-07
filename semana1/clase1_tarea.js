@@ -1,5 +1,3 @@
-const { ask } = require('../helpers/input.js');
-
 async function main(){
     const numA = Number(await ask('Ingresa el primer numero: '));
     const numB = Number(await ask('Ingresa el segundo numero: '));

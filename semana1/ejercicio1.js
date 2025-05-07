@@ -8,7 +8,6 @@ async function main() {
   const food = await ask('¿Cuál es tu comida favorita?');
   console.log(`Hola ${name}, tienes ${age} años.`);
   console.log(`Tu comida favorita es: ${food}.`);
-
 }
 
 main();
