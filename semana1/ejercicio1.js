@@ -1,3 +1,4 @@
+
 const { ask } = require('../helpers/input.js');
 
 async function main() {
@@ -7,6 +8,7 @@ async function main() {
   const food = await ask('¿Cuál es tu comida favorita?');
   console.log(`Hola ${name}, tienes ${age} años.`);
   console.log(`Tu comida favorita es: ${food}.`);
+
 }
 
 main();
