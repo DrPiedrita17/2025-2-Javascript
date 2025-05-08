@@ -11,11 +11,31 @@ async function main() {
   // TODO : Implementar la lógica para mostrar el día de la semana según el número ingresado
   // Ejemplo: Si el usuario ingresa 1, debe mostrar "Lunes"
 
-  if (dia >= 1 && dia <= 7) {
-    console.log(diasSemana[dia - 1]);
-  }
-  else {
-    console.log("Numero no válido");
+  switch(dia){
+    case 1:
+      console.log("Lunes");
+    break;
+    case 2:
+      console.log("Martes");
+    break;
+    case 3:
+      console.log("Miercoles");
+    break;
+    case 4:
+      console.log("Jueves");
+    break;
+    case 5:
+      console.log("Viernes");
+    break;
+    case 6:
+      console.log("Sabado");
+    break;
+    case 7:
+      console.log("Domingo");
+    break;
+    default:
+      console.log("Dia inexistente");
+    break;
   }
 }
 
