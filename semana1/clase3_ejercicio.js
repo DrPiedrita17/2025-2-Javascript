@@ -36,7 +36,9 @@ async function main() {
     default:
       console.log("Dia inexistente");
     break;
+
   }
+
 }
 
 main();
