@@ -14,6 +14,16 @@ function diffDays(actualDate, birthDate){
     return edadEnDias;
 }
 
+function diffMonths (dias){
+    const edadEnMeses =Math.floor(dias / 30);
+    return edadEnMeses;
+}
+
+function diffYears (meses){
+    const edadEnAños = Math.floor(meses / 12);
+    return edadEnAños;
+}
+
 async function main() {
     const actualDate = new Date();
 
@@ -25,6 +35,8 @@ async function main() {
 
     console.log("Haz vivido aproximadamente: ");
     console.log(`${diffDays(actualDate, birthDate)}  días`);
+    console.log(`${diffMonths(diffDays(actualDate, birthDate))}  meses`);
+    console.log(`${diffYears(diffMonths(diffDays(actualDate, birthDate)))}  años`);
 }
 
 main();
